@@ -1,3 +1,7 @@
+# https://github.com/christyshao712/lab10-TB-CS.git
+# Partner 1: Tanmay Bansal
+# Partner 2: Christy Shao
+
 import math
 
 def square_root(a):
