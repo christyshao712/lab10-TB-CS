@@ -1,6 +1,7 @@
 import unittest
 from calculator import *
 
+
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     # def test_add(self): # 3 assertions
@@ -11,12 +12,12 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ####### Partner 1
-    def test_multiply(self): # 3 assertions
+    def test_multiply(self):  # 3 assertions
         self.assertEqual(mul(1, 0), 0)
         self.assertEqual(mul(2, -10), -20)
         self.assertEqual(mul(14.1, 301.9), 4256.79)
 
-    def test_divide(self): # 3 assertions
+    def test_divide(self):  # 3 assertions
         self.assertEqual(div(1, 1), 1)
         self.assertEqual(div(-2, -10), 5)
         self.assertEqual(div(4.6, 36.8), 8)
@@ -35,20 +36,21 @@ class TestCalculator(unittest.TestCase):
     #     # use same technique from test_divide_by_zero
     #     fill in code
     # ##########################
-    
-    ####### Partner 1
-    def test_log_invalid_argument(self): # 1 assertion
-        with self.assertRaises(ValueError):
-             log(0, 5)
 
-    def test_hypotenuse(self): # 3 assertions
+    ####### Partner 1
+    def test_log_invalid_argument(self):  # 1 assertion
+        with self.assertRaises(ValueError):
+            log(0, 5)
+
+    def test_hypotenuse(self):  # 3 assertions
         self.assertEqual(hypotenuse(5, 12), 13)
         self.assertEqual(hypotenuse(-3, 4), 5)
         self.assertAlmostEqual(hypotenuse(-10.1, -9.6), 13.934489585198303)
 
-    def test_sqrt(self): # 3 assertions
+    def test_sqrt(self):  # 3 assertions
         with self.assertRaises(ValueError):
             square_root(-1)
+
 
 # Do not touch this
 if __name__ == "__main__":
