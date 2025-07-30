@@ -1,5 +1,17 @@
 import math
 
+def square_root(a):
+    try:
+        return math.sqrt(a)
+    except ValueError:
+        raise ValueError("Cannot take the square root of a negative number")
+
+def hypotenuse(a, b):
+    try:
+        return math.hypot(a, b)
+    except TypeError:
+        raise TypeError("Both sides of the triangle must be numbers.")
+
 def add(a, b):
     return a + b
 
@@ -25,10 +37,7 @@ def exp(a, b):
     return a ** b
 
 
-
-
 import math
->>>>>>> 322ec69bcfd6478625fc5a424b37ec5be0e26801
 
 def add(a, b):
     return a + b
@@ -45,5 +54,4 @@ def log(a, b):
     return math.log(a,b)
 
 def exp(a, b):
-    return a^b
-
+    return a**b
