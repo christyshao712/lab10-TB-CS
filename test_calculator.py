@@ -29,10 +29,6 @@ class TestCalculator(unittest.TestCase):
     def test_divide_by_zero(self): # 1 assertion
         with self.assertRaises(ZeroDivisionError):
             div(0, 5)
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
 
     def test_logarithm(self): # 3 assertions
         self.assertEqual(log(10, 10), 1)
