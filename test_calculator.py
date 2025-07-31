@@ -5,7 +5,6 @@
 import unittest
 from calculator import *
 
-
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
@@ -14,9 +13,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(5.3, 1.1), 6.4)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(-2, -3), 1)
-        self.assertEqual(sub(5, -3), 8)
-        self.assertEqual(sub(5, 5), 0)
+        self.assertEqual(subtract(-2, -3), 1)
+        self.assertEqual(subtract(5, -3), 8)
+        self.assertEqual(subtract(5, 5), 0)
 
     ####### Partner 1
     def test_multiply(self):  # 3 assertions
@@ -41,11 +40,11 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(-1, 1)
+            logarithm(-1, 1)
     
     def test_log_invalid_argument(self):  # 1 assertion
         with self.assertRaises(ValueError):
-            log(0, 5)
+            logarithm(0, 5)
 
     def test_hypotenuse(self):  # 3 assertions
         self.assertEqual(hypotenuse(5, 12), 13)
@@ -57,7 +56,6 @@ class TestCalculator(unittest.TestCase):
             square_root(-1)
         self.assertEqual(square_root(1), 1)
         self.assertEqual(square_root(81), 9)
-
 
 # Do not touch this
 if __name__ == "__main__":
